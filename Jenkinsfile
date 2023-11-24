@@ -32,8 +32,8 @@ pipeline {
                 script {
                     sh 'cp cluster1.yaml ~/.kube/config'
                     sh 'kubectl config use-context cluster1'
-                    sh 'kubectl scale deployment cluster1 --replicas=0'
-                    sh 'kubectl scale deployment cluster1 --replicas=3'
+                    sh 'kubectl scale deployment a3deployment --replicas=0'
+                    sh 'kubectl scale deployment a3deployment --replicas=3'
                 }
             }
         }
