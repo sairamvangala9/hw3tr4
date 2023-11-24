@@ -4,7 +4,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub_u_and_p')
     }
     stages {
-        stage("build package") {
+        stage("Build maven package") {
             steps {
                 script {
                     checkout scm
@@ -12,7 +12,7 @@ pipeline {
                 }
             }
         }
-        stage("Build image") {
+        stage("Build docker image") {
             steps {
                 script {
                     sh 'docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
@@ -32,8 +32,8 @@ pipeline {
                 script {
                     sh 'cp cluster1.yaml ~/.kube/config'
                     sh 'kubectl config use-context cluster1'
-                    sh 'kubectl scale deployment deployment1 --replicas=0'
-                    sh 'kubectl scale deployment deployment1 --replicas=3'
+                    sh 'kubectl scale deployment cluster1 --replicas=0'
+                    sh 'kubectl scale deployment cluster1 --replicas=3'
                 }
             }
         }
