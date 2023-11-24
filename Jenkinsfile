@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     checkout scm
-                    sh "mvn clean package"
+                    sh 'mvn clean package'
                 }
             }
         }
