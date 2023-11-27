@@ -1,4 +1,9 @@
 # swe645 Assignment 3
+Authors:
+```
+Sayi Rosshhun Gadde (G#: G01383994)
+Sai Ram Vangala (G#: G01373045)
+```
 
 AWS/Surveys API/Node URL: http://44.216.255.114:32298/api/surveys/ <br>
 Jenkins URL: http://52.204.242.9:8080/job/swe645-a3/ <br>

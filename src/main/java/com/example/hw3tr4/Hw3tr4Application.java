@@ -1,8 +1,9 @@
 /*
  * Authors:
- * -- Sayi Rosshhun Gadde
- * -- Sai Ram Vangala
+ * -- Sayi Rosshhun Gadde (G#: G01383994)
+ * -- Sai Ram Vangala (G#: G01373045)
  * */
+
 package com.example.hw3tr4;
 
 import org.springframework.boot.SpringApplication;
