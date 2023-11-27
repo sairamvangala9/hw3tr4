@@ -16,7 +16,7 @@ import java.util.List;
  * This class provides RESTful endpoints for CRUD operations on student surveys.
  */
 @RestController // Marks this class as a REST controller
-@RequestMapping("/api/surveys") // Maps HTTP requests to /api/surveys path
+@RequestMapping("/api/mysurveys1") // Maps HTTP requests to /api/surveys path
 public class StudentSurveyController {
 
     @Autowired
